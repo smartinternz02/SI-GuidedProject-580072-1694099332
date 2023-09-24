@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESTAURANTS"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="BacktoLogin"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.046"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023"
+            app:srcCompat="@drawable/back" />
+
+        <ImageButton
+            android:id="@+id/mcd"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:contentDescription="Mcd"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:srcCompat="@drawable/mcd" />
+
+        <ImageButton
+            android:id="@+id/taco"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="taco"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/mcd"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/mcd"
+            app:layout_constraintTop_toBottomOf="@+id/mcd"
+            app:srcCompat="@drawable/taco" />
+
+        <ImageButton
+            android:id="@+id/domino"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="Domino"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/taco"
+            app:layout_constraintStart_toStartOf="@+id/taco"
+            app:layout_constraintTop_toBottomOf="@+id/taco"
+            app:srcCompat="@drawable/domino" />
+
+        <ImageButton
+            android:id="@+id/chaat"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="fitXY"
+            android:contentDescription="Chaat"
+            app:layout_constraintEnd_toEndOf="@+id/domino"
+            app:layout_constraintStart_toStartOf="@+id/domino"
+            app:layout_constraintTop_toBottomOf="@+id/domino"
+            app:srcCompat="@drawable/gangotree" />
+
+        <ImageButton
+            android:id="@+id/sandwich"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="fitXY"
+            android:contentDescription="Sandwich"
+            app:layout_constraintEnd_toEndOf="@+id/chaat"
+            app:layout_constraintStart_toStartOf="@+id/chaat"
+            app:layout_constraintTop_toBottomOf="@+id/chaat"
+            app:srcCompat="@drawable/sandwich" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
